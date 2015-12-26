@@ -4,6 +4,9 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-note3',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    // contentSecurityPolicy: { 'connect-src': "'self' https://scorching-fire-6816.firebaseapp.com/" },
+    firebase: 'https://quick-start-ember.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {

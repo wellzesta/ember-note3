@@ -59,4 +59,6 @@ ember g route register --pod
 ember install ember-cli-tbs
 ember install emberfire
 ember g model user name:string
+ember g route login --pod
+ember g route notebooks --pod
 ```
